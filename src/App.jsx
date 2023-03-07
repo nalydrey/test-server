@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import Form from "./Form";
 
-const URL = 'http://localhost:3001/'
+export const URL = 'http://localhost:3001/'
 function App() {
 
     const [users, setUsers] = useState([])

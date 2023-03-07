@@ -2,6 +2,7 @@ import React from 'react';
 import {IconButton} from "@mui/material";
 import {DeleteForever, Edit, Fingerprint} from "@mui/icons-material";
 import axios from "axios";
+import {URL} from './App'
 
 
 function DeleteIcon() {
