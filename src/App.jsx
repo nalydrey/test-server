@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import Form from "./Form";
 
-export const url = 'http://localhost:3001/'
+export const url = 'http://127.0.0.1:3001/'
 // export const url =''
 // "homepage":"https://nalydrey.github.io/test-server/",
 // "proxy": "http://localhost:3001",
