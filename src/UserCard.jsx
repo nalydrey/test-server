@@ -15,7 +15,7 @@ const UserCard = (props) => {
 
     const deleteUser = () => {
         console.log(id)
-        axios.delete(url+`api/users/${id}`)
+        axios.delete(`api/users/${id}`)
             .then(resp => getData(resp.data))
     }
 
