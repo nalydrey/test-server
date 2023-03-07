@@ -1,8 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField} from "@mui/material";
-import axios from "axios";
-import {logDOM} from "@testing-library/react";
-import {URL} from './App'
+import {url} from './App'
 
 const initialForm = {
     lastName: '',
@@ -20,7 +18,7 @@ const Form = (props) => {
 
 
     const handleCreate = () => {
-        fetch(URL+'api/users', {
+        fetch(url+'api/users', {
             body: JSON.stringify(field),
             method: 'POST',
             headers: {'Content-type': 'application/json'}
