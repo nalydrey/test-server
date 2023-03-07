@@ -15,7 +15,7 @@ const UserCard = (props) => {
 
     const deleteUser = () => {
         console.log(id)
-        axios.delete(`api/users/${id}`)
+        axios.delete(`http://127.0.0.1:3001/test-server/api/users/${id}`)
             .then(resp => getData(resp.data))
     }
 

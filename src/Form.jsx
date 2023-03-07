@@ -18,7 +18,7 @@ const Form = (props) => {
 
 
     const handleCreate = () => {
-        fetch('http://127.0.0.1:3001/api/users', {
+        fetch('http://127.0.0.1:3001/test-server/api/users', {
             body: JSON.stringify(field),
             method: 'POST',
             headers: {'Content-type': 'application/json'}

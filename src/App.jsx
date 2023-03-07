@@ -24,7 +24,7 @@ function App() {
 
 
     useEffect(()=>{
-        axios.get('http://127.0.0.1:3001/api/users')
+        axios.get('http://127.0.0.1:3001/test-server/api/users')
             .then(resp => setUsers(resp.data))
     },[])
 
