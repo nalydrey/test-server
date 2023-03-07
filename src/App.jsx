@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import Form from "./Form";
 
+const URL = 'http://localhost:3001/'
 function App() {
 
     const [users, setUsers] = useState([])
@@ -19,7 +20,7 @@ function App() {
 
 
     useEffect(()=>{
-        axios.get('api/users')
+        axios.get(URL+'api/users')
             .then(resp => setUsers(resp.data))
     },[])
 
